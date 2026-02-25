@@ -14,6 +14,14 @@ body.night {
 .night #night-nav #night-icon:before {
   content: '\f186';
 }
+.night .navbar-logo .logo-img,
+.night .footer-logo .logo-img {
+  display: none;
+}
+.night .navbar-logo .logo-img-dark,
+.night .footer-logo .logo-img-dark {
+  display: inline-block;
+}
 .night .navbar-menu {
   background-color: inherit;
 }
