@@ -1451,7 +1451,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ffff3e;
+    background: #ff96f5;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3175,4 +3175,79 @@ header.header {
 .post-copyright ul {
   border-left-color: #bf616a !important;
   border-color: #bf616a !important;
+}
+.post-body table {
+  border-color: #434c5e !important;
+  background: #3b4252 !important;
+}
+.post-body thead {
+  background: #434c5e !important;
+  color: #e5e9f0 !important;
+}
+.post-body tbody tr:nth-child(odd) {
+  background: #3b4252 !important;
+}
+.post-body tbody tr:nth-child(even) {
+  background: #2e3440 !important;
+}
+.post-body tbody tr:hover {
+  background: #434c5e !important;
+}
+.post-body table td,
+.post-body table th {
+  border-color: #434c5e !important;
+  padding: 8px 12px;
+}
+.post-body table {
+  display: block;
+  overflow-x: auto;
+}
+.post-body table::-webkit-scrollbar {
+  height: 6px;
+}
+.post-body table::-webkit-scrollbar-track {
+  background: #2e3440;
+}
+.post-body table::-webkit-scrollbar-thumb {
+  background: #434c5e;
+  border-radius: 3px;
+}
+.post-body table::-webkit-scrollbar-thumb:hover {
+  background: #88c0d0;
+}
+.highlight,
+pre {
+  background: #2e3440 !important;
+}
+.post-body code,
+code {
+  color: #88c0d0 !important;
+  background: #3b4252 !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: 1px solid #434c5e !important;
+}
+.highlight code,
+pre code {
+  color: #d8dee9 !important;
+  background: #2e3440 !important;
+  display: block !important;
+  padding: 10px 15px !important;
+  border: none !important;
+  font-size: inherit;
+  line-height: 1.6 !important;
+  overflow-x: auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+.highlight .caption,
+.highlight figcaption,
+figure.highlight .caption {
+  font-size: 0.75em !important;
+  color: #d8dee9 !important;
+  background: #3b4252 !important;
+  padding: 4px 12px !important;
+  border-bottom: 1px solid #434c5e !important;
+  border-radius: 4px 4px 0 0 !important;
 }
