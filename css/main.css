@@ -49,10 +49,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1c1b1b;
-    --highlight-foreground: #fff;
-    --highlight-gutter-background: #323131;
-    --highlight-gutter-foreground: #e8e8e8;
+    --highlight-background: #2e3440;
+    --highlight-foreground: #d8dee9;
+    --highlight-gutter-background: #3e4550;
+    --highlight-gutter-foreground: #c7cdd8;
     color-scheme: dark;
   }
   img {
@@ -530,114 +530,272 @@ pre code.hljs {
 code.hljs {
   padding: 3px 5px
 }
-/*!
-  Theme: StackOverflow Dark
-  Description: Dark theme as used on stackoverflow.com
-  Author: stackoverflow.com
-  Maintainer: @Hirse
-  Website: https://github.com/StackExchange/Stacks
-  License: MIT
-  Updated: 2021-05-15
+/*
+ * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2017-present Sven Greb <development@svengreb.de>
+ *
+ * Project:    Nord highlight.js
+ * Version:    0.1.0
+ * Repository: https://github.com/arcticicestudio/nord-highlightjs
+ * License:    MIT
+ * References:
+ *   https://github.com/arcticicestudio/nord
+ */
+/*
 
-  Updated for @stackoverflow/stacks v0.64.0
-  Code Blocks: /blob/v0.64.0/lib/css/components/_stacks-code-blocks.less
-  Colors: /blob/v0.64.0/lib/css/exports/_stacks-constants-colors.less
+Polar Night
+
+#2E3440
+#3B4252
+#434C5E
+#4C566A
+
+Snow Storm
+
+#D8DEE9
+#E5E9F0
+#ECEFF4
+
+Frost
+
+#8FBCBB
+#88C0D0
+#81A1C1
+#5E81AC
+
+Aurora
+
+#BF616A
+#D08770
+#EBCB8B
+#A3BE8C
+#B48EAD
+
 */
 .hljs {
-  /* var(--highlight-color) */
-  color: #ffffff;
-  /* var(--highlight-bg) */
-  background: #1c1b1b
+  background: #2E3440
 }
+.hljs,
 .hljs-subst {
-  /* var(--highlight-color) */
-  color: #ffffff
+  color: #D8DEE9
 }
-.hljs-comment {
-  /* var(--highlight-comment) */
-  color: #999999
+.hljs-selector-tag {
+  color: #81A1C1
 }
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-meta .hljs-keyword,
-.hljs-doctag,
-.hljs-section {
-  /* var(--highlight-keyword) */
-  color: #88aece
-}
-.hljs-attr {
-  /* var(--highlight-attribute); */
-  color: #88aece
-}
-.hljs-attribute {
-  /* var(--highlight-symbol) */
-  color: #c59bc1
-}
-.hljs-name,
-.hljs-type,
-.hljs-number,
-.hljs-selector-id,
-.hljs-quote,
-.hljs-template-tag {
-  /* var(--highlight-namespace) */
-  color: #f08d49
+.hljs-selector-id {
+  color: #8FBCBB;
+  font-weight: bold
 }
 .hljs-selector-class {
-  /* var(--highlight-keyword) */
-  color: #88aece
+  color: #8FBCBB
 }
-.hljs-string,
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
 .hljs-selector-attr {
-  /* var(--highlight-variable) */
-  color: #b5bd68
+  color: #8FBCBB
 }
-.hljs-meta,
+.hljs-property {
+  color: #88C0D0
+}
 .hljs-selector-pseudo {
-  /* var(--highlight-keyword) */
-  color: #88aece
-}
-.hljs-built_in,
-.hljs-title,
-.hljs-literal {
-  /* var(--highlight-literal) */
-  color: #f08d49
-}
-.hljs-bullet,
-.hljs-code {
-  /* var(--highlight-punctuation) */
-  color: #cccccc
-}
-.hljs-meta .hljs-string {
-  /* var(--highlight-variable) */
-  color: #b5bd68
-}
-.hljs-deletion {
-  /* var(--highlight-deletion) */
-  color: #de7176
+  color: #88C0D0
 }
 .hljs-addition {
-  /* var(--highlight-addition) */
-  color: #76c490
+  background-color: rgba(163, 190, 140, 0.5)
+}
+.hljs-deletion {
+  background-color: rgba(191, 97, 106, 0.5)
+}
+.hljs-built_in,
+.hljs-type {
+  color: #8FBCBB
+}
+.hljs-class {
+  color: #8FBCBB
+}
+.hljs-function {
+  color: #88C0D0
+}
+.hljs-title.hljs-function,
+.hljs-function > .hljs-title {
+  color: #88C0D0
+}
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol {
+  color: #81A1C1
+}
+.hljs-number {
+  color: #B48EAD
+}
+.hljs-regexp {
+  color: #EBCB8B
+}
+.hljs-string {
+  color: #A3BE8C
+}
+.hljs-title {
+  color: #8FBCBB
+}
+.hljs-params {
+  color: #D8DEE9
+}
+.hljs-bullet {
+  color: #81A1C1
+}
+.hljs-code {
+  color: #8FBCBB
 }
 .hljs-emphasis {
   font-style: italic
 }
+.hljs-formula {
+  color: #8FBCBB
+}
 .hljs-strong {
   font-weight: bold
 }
-.hljs-formula,
-.hljs-operator,
-.hljs-params,
-.hljs-property,
-.hljs-punctuation,
+.hljs-link:hover {
+  text-decoration: underline
+}
+.hljs-quote {
+  color: #4C566A
+}
+.hljs-comment {
+  color: #4C566A
+}
+.hljs-doctag {
+  color: #8FBCBB
+}
+.hljs-meta,
+.hljs-meta .hljs-keyword {
+  color: #5E81AC
+}
+.hljs-meta .hljs-string {
+  color: #A3BE8C
+}
+.hljs-attr {
+  color: #8FBCBB
+}
+.hljs-attribute {
+  color: #D8DEE9
+}
+.hljs-name {
+  color: #81A1C1
+}
+.hljs-section {
+  color: #88C0D0
+}
 .hljs-tag {
-  /* purposely ignored */
-  
+  color: #81A1C1
+}
+.hljs-variable {
+  color: #D8DEE9
+}
+.hljs-template-variable {
+  color: #D8DEE9
+}
+.hljs-template-tag {
+  color: #5E81AC
+}
+/* per language customizations */
+.language-abnf .hljs-attribute {
+  color: #88C0D0
+}
+.language-abnf .hljs-symbol {
+  color: #EBCB8B
+}
+.language-apache .hljs-attribute {
+  color: #88C0D0
+}
+.language-apache .hljs-section {
+  color: #81A1C1
+}
+.language-arduino .hljs-built_in {
+  color: #88C0D0
+}
+.language-aspectj .hljs-meta {
+  color: #D08770
+}
+.language-aspectj > .hljs-title {
+  color: #88C0D0
+}
+.language-bnf .hljs-attribute {
+  color: #8FBCBB
+}
+.language-clojure .hljs-name {
+  color: #88C0D0
+}
+.language-clojure .hljs-symbol {
+  color: #EBCB8B
+}
+.language-coq .hljs-built_in {
+  color: #88C0D0
+}
+.language-cpp .hljs-meta .hljs-string {
+  color: #8FBCBB
+}
+.language-css .hljs-built_in {
+  color: #88C0D0
+}
+.language-css .hljs-keyword {
+  color: #D08770
+}
+.language-diff .hljs-meta {
+  color: #8FBCBB
+}
+.language-ebnf .hljs-attribute {
+  color: #8FBCBB
+}
+.language-glsl .hljs-built_in {
+  color: #88C0D0
+}
+.language-groovy .hljs-meta:not(:first-child) {
+  color: #D08770
+}
+.language-haxe .hljs-meta {
+  color: #D08770
+}
+.language-java .hljs-meta {
+  color: #D08770
+}
+.language-ldif .hljs-attribute {
+  color: #8FBCBB
+}
+.language-lisp .hljs-name {
+  color: #88C0D0
+}
+.language-lua .hljs-built_in {
+  color: #88C0D0
+}
+.language-moonscript .hljs-built_in {
+  color: #88C0D0
+}
+.language-nginx .hljs-attribute {
+  color: #88C0D0
+}
+.language-nginx .hljs-section {
+  color: #5E81AC
+}
+.language-pf .hljs-built_in {
+  color: #88C0D0
+}
+.language-processing .hljs-built_in {
+  color: #88C0D0
+}
+.language-scss .hljs-keyword {
+  color: #81A1C1
+}
+.language-stylus .hljs-keyword {
+  color: #81A1C1
+}
+.language-swift .hljs-meta {
+  color: #D08770
+}
+.language-vim .hljs-built_in {
+  color: #88C0D0;
+  font-style: italic
+}
+.language-yaml .hljs-meta {
+  color: #D08770
 }
 }
 code,
@@ -1451,7 +1609,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #7eb921;
+    background: #dbff8a;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3125,7 +3283,6 @@ header.header {
   --link-color: #88c0d0;
   --link-hover-color: #81a1c1;
   --border-color: #434c5e;
-  --code-bg-color: #2e3440;
   --sidebar-bg-color: #2e3440;
   --sidebar-nav-color: #d8dee9;
   --sidebar-nav-hover-color: #88c0d0;
@@ -3224,44 +3381,36 @@ header.header {
 .post-body table::-webkit-scrollbar-thumb:hover {
   background: #88c0d0;
 }
-.highlight,
-pre {
-  background: #2e3440 !important;
-}
-.post-body code,
-code {
-  color: #88c0d0 !important;
-  background: #3b4252 !important;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.9em;
-  border: 1px solid #434c5e !important;
-}
-.highlight code,
-pre code {
-  color: #d8dee9 !important;
-  background: #2e3440 !important;
-  display: block !important;
-  padding: 10px 15px !important;
-  border: none !important;
-  font-size: inherit;
-  line-height: 1.6 !important;
-  overflow-x: auto !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-.highlight .caption,
-.highlight figcaption,
-figure.highlight .caption {
-  font-size: 0.75em !important;
-  color: #d8dee9 !important;
-  background: #3b4252 !important;
-  padding: 4px 12px !important;
-  border-bottom: 1px solid #434c5e !important;
-  border-radius: 4px 4px 0 0 !important;
-}
 .search-popup .search-input {
   background: #2e3440 !important;
   color: #d8dee9 !important;
   border-color: #434c5e !important;
+}
+.sidebar-toggle:hover .toggle-line {
+  background: #88c0d0 !important;
+}
+.sidebar-toggle .toggle-line {
+  background: #d8dee9 !important;
+  transition: all 0.3s ease;
+}
+.back-to-top:hover {
+  color: #88c0d0 !important;
+}
+.back-to-top {
+  color: #d8dee9 !important;
+}
+.sidebar-toggle {
+  background: #434c5e !important;
+}
+.back-to-top {
+  background: #434c5e !important;
+}
+.sidebar,
+.sidebar-inner {
+  background: #2e3440 !important;
+}
+.highlight,
+pre {
+  background: #2e3440 !important;
+  border: none !important;
 }
